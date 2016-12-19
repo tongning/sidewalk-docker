@@ -1,0 +1,13 @@
+# Adopt version 2 syntax:
+#   https://docs.docker.com/compose/compose-file/#/versioning
+version: '2'
+
+volumes:
+    database_data:
+        driver: local
+
+services:
+    postgres:
+        build: ./docker/postgres
+        expose:
+            - 5432
