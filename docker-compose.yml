@@ -9,5 +9,23 @@ volumes:
 services:
     postgres:
         build: ./docker/postgres
+        ports:
+            - 5432:5432
         expose:
             - 5432
+    web:
+        build: ./docker/web
+        ports:
+            - 9000:9000
+            - 9999:9999
+        expose:
+            - 9000
+        environment:
+            DATABASE_URL: jdbc:postgresql://postgres:5432/sidewalk
+        stdin_open: true
+        volumes:
+            - ./SidewalkWebpage:/home/app
+    grunt:
+        build: ./docker/grunt
+        volumes_from:
+            - web
