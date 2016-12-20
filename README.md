@@ -7,19 +7,23 @@ This repository contains build files that can be used to launch a development en
 * Follow instructions to [install Docker](https://docs.docker.com/engine/installation/) for your OS.
 * Install [docker-compose](https://docs.docker.com/compose/).
 * Clone this repository:
+
   ```bash
   $ git clone https://github.com/tongning/sidewalk-docker.git
   ```
 * Obtain a database dump and move it into `docker/postgres`, naming it `sidewalk.sql`:
+
   ```bash
   $ mv /path/to/databasedump.sql sidewalk-docker/docker/postgres/sidewalk.sql
   ```
 * Enter the repository folder and clone the Project Sidewalk platform:
+
   ```bash
   $ cd sidewalk-docker
   $ git clone https://github.com/ProjectSidewalk/SidewalkWebpage.git
   ```
 * Build and run:
+
   ```bash
   # Run with sudo if necessary
   $ docker-compose up
