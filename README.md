@@ -34,10 +34,10 @@ This repository contains build files that can be used to launch a development en
   ```
   Once you see this message, visit `http://localhost:9000` to see the webpage.
   
-  <font color="#FF5544">Note:</font>
+  **Important note:**
   
   You may encounter errors related to failed downloads of Scala components. To resolve them, just quit (Ctrl+C) and rerun `docker-compose up` until all components download successfully. This is a [known issue](https://github.com/ProjectSidewalk/SidewalkWebpage/issues/483).
- * You are finished! Edit the code in the SidewalkWebpage folder, and  the site will rebuild automatically. You can also connect a debugger to port 9999 on your local machine. We recommend using an IDE, such as IntelliJ.
+* You are finished! Edit the code in the SidewalkWebpage folder, and  the site will rebuild automatically. You can also connect a debugger to port 9999 on your local machine. We recommend using an IDE, such as IntelliJ.
   
 #### Configuration notes
 
