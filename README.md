@@ -11,7 +11,7 @@ This repository contains build files that can be used to launch a development en
   ```bash
   $ git clone https://github.com/tongning/sidewalk-docker.git
   ```
-* Obtain a database dump and move it into `docker/postgres`, naming it `sidewalk.sql`:
+* Obtain a database dump from the Project Sidewalk team and move it into `docker/postgres`, naming it `sidewalk.sql`:
 
   ```bash
   $ mv /path/to/databasedump.sql sidewalk-docker/docker/postgres/sidewalk.sql
