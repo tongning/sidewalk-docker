@@ -5,7 +5,7 @@ This repository contains build files that can be used to launch a development en
 #### Usage instructions
 
 * Follow instructions to [install Docker](https://docs.docker.com/engine/installation/) for your OS.
-* Install [docker-compose](https://docs.docker.com/compose/).
+* Install [docker-compose](https://docs.docker.com/compose/install/).
 * Clone this repository:
 
   ```bash
