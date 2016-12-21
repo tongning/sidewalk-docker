@@ -1,5 +1,5 @@
 #!/bin/sh
-cd /home/grunt
+cd /home/app
 npm install
 grunt
 grunt watch
