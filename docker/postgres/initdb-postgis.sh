@@ -3,7 +3,7 @@
 set -e
 
 # Perform all actions as $POSTGRES_USER
-export PGUSER="$POSTGRES_USER"
+export PGUSER="postgres"
 
 # Create the 'template_postgis' template db
 "${psql[@]}" <<- 'EOSQL'
@@ -30,7 +30,7 @@ APP_DB_PASS=sidewalk
 # Edit the following to change the name of the database that is created (defaults to the user name)
 APP_DB_NAME=sidewalk
 
-cat << EOF | su - postgres -c psql
+cat << EOF | psql
 -- Create the database user:
 CREATE USER $APP_DB_USER WITH PASSWORD '$APP_DB_PASS';
 
